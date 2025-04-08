@@ -1,0 +1,26 @@
+#backgroundVideo1,
+#backgroundVideo2,
+#backgroundImg {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -20;
+}
+
+@media (max-width: 750px) {
+  #backgroundVideo1 {
+    display: none;
+  }
+  #backgroundVideo2 {
+    display: none;
+  }
+  body {
+    background: url("00.jpg") no-repeat;
+    background-size: cover;
+  }
+}

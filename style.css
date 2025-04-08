@@ -1,0 +1,143 @@
+@import url("https:/fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* #testBackdrop{
+    font-size: 2.5rem;  
+    background-color: rgba(255, 0, 179, 0.5);
+    text-shadow: 0px 0px 0px black;
+} */
+
+#backgroundVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -20;
+}
+
+/* @media (max-width: 750px) {
+  #background-video {
+    display: none;
+  }
+  body {
+    background: url("00.jpg") no-repeat;
+    background-size: cover;
+  }
+} */
+
+.diapo {
+  display: flex;
+  justify-content: center;
+}
+
+.closedDiapo {
+  height: 0;
+  width: 70vw;
+  transition: 0.4s;
+}
+
+.openedDiapo {
+  height: 50vw;
+  width: 70vw;
+  border: 2px solid black;
+  transition: 0.4s;
+}
+
+.closedDiapoBackground {
+  height: 0;
+  width: 70vw;
+  z-index: -13;
+  transition: 0.4s;
+}
+
+.openedDiapoBackground {
+  height: 50vw;
+  width: 70vw;
+  background: black;
+  z-index: -13;
+  transition: 0.4s;
+}
+
+.container > div > .videoDiapo,
+.container > div > .imgDiapo {
+  height: 40vw;
+  width: 60vw;
+  margin: 5vw 5vw;
+  position: absolute;
+  display: flex;
+}
+
+.container > div > div > video,
+.container > div > div > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+#vid00 {
+  max-width: 800px;
+  position: relative;
+  z-index: -12;
+}
+
+/* .controls{
+    display:flex;
+    position:absolute; 
+    bottom: 50px;
+    width: 100%;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 0255);
+    z-index: 1;
+} */
+
+.diapoBtn {
+  background: linear-gradient(
+    to bottom,
+    black,
+    rgb(255, 255, 255, 0.25),
+    black
+  );
+  display: flex;
+  align-items: center;
+  padding: 9px;
+}
+
+.chevrons {
+  color: white;
+}
+
+#presentationOfThePlace {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  width: 60vw;
+  margin: 6vh 6vw;
+  color: rgb(218, 235, 68);
+}
+
+/* #descriptionTitle, 
+#descriptionContent{
+
+} */
+
+/*
+ .openVideo {
+    transition: 1s;
+    width: 70vw;
+    opacity: 100%;
+}
+
+.closeVideo {
+    transition: 1s;
+    width: 70vw;
+    opacity: 0;
+} 
+*/

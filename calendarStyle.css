@@ -1,0 +1,150 @@
+@import url("https:/fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+#doubleCalendar {
+  position: relative;
+  top: 0px;
+  z-index: 1;
+  background: rgba(224, 250, 201, 0.403);
+  backdrop-filter: blur(1px);
+  border-radius: 15px;
+}
+
+.closedDoubleCalendar {
+  height: 0;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.openingDoubleCalendar {
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.openedDoubleCalendar {
+  padding: 0 0 28px 0;
+  transition: 0.5s;
+  opacity: 100%;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: bold;
+}
+.calendar > div {
+  margin: 0 10px;
+}
+
+/* .headerCalendar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 5px;
+} */
+
+.headerCalendar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.headerCalendar button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(to right, aqua, yellow);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.monthYear {
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.days {
+  /* display: flex;    
+    flex-direction: row; */
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.day {
+  text-align: center;
+  padding: 5px;
+  color: black;
+  font-weight: 500;
+}
+
+.dates,
+.calendarTest {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2px;
+  margin: auto;
+  cursor: pointer;
+  font-weight: 600;
+  /* border-radius: 50%; */
+  width: 40px;
+  height: 40px;
+  transition: 0.2s;
+}
+
+.date:hover,
+.date.active {
+  /* background: blue; */
+  color: white;
+  cursor: pointer;
+}
+
+.date.inactive {
+  color: grey;
+}
+
+.date.inactive:hover {
+  color: white;
+}
+
+.periodStart {
+  /* background: rgb(121, 158, 46); */
+  /* background-image: url(../Asset/Img/ImgLibreDeDroits/Icon.png); */
+  /* background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; */
+  /* background-color: aqua; */
+}
+
+.period {
+  /* background: rgb(171, 255, 2); */
+  /* background-image: url(../Asset/Img/ImgLibreDeDroits/Icon.png); */
+  /* background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; */
+  /* background-color: rgb(0, 255, 0); */
+}
+
+.periodEnd {
+  /* background: rgb(121, 158, 46); */
+  /* background-image: url(../Asset/Img/ImgLibreDeDroits/Icon.png); */
+  /* background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; */
+  /* background-color: yellow; */
+}

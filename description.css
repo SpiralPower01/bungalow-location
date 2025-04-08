@@ -1,0 +1,187 @@
+.descriptionBackground {
+  height: 40vw;
+  width: 70vw;
+  background: black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.closedDescriptionBackground {
+  height: 0;
+  width: 70vw;
+}
+
+/* .descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+} */
+.descriptionText {
+  margin: 2vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.descriptionText > #descriptionTitle,
+.descriptionText > #descriptionContent {
+  color: white;
+}
+
+.closedDescriptionBackground > .descriptionText > #descriptionTitle,
+.closedDescriptionBackground > .descriptionText > #descriptionContent {
+  color: transparent;
+}
+
+.imgContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.presentationOfThePlaceImg,
+.presentationOfThePlaceImgClicked {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.presentationOfThePlaceImg > img,
+.presentationOfThePlaceImgClicked > img {
+  transition: 0.2s;
+}
+
+.presentationOfThePlaceImgClosed {
+  position: absolute;
+}
+
+.imgContainer > .terrasse {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.closedDescriptionBackground > .imgContainer > .terrasse {
+  height: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgContainer > .cuisine,
+.imgContainer > .chambre,
+.imgContainer > .chambreConvertible {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.closedDescriptionBackground > .imgContainer > .cuisine,
+.closedDescriptionBackground > .imgContainer > .chambre,
+.closedDescriptionBackground > .imgContainer > .chambreConvertible {
+  height: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.imgContainer > .salleDeBain {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.closedDescriptionBackground > .imgContainer > .salleDeBain {
+  height: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.presentationOfThePlaceImg > .imgSolo {
+  height: 24vw;
+  width: 42vw;
+  border-radius: 20px;
+}
+
+.presentationOfThePlaceImg > .imgDouble {
+  height: 19vw;
+  width: 28vw;
+  border-radius: 20px;
+}
+
+.presentationOfThePlaceImg > .imgTriple {
+  height: 24vw;
+  width: 14vw;
+  border-radius: 20px;
+}
+.closedDescriptionBackground
+  > .imgContainer
+  > div
+  > .presentationOfThePlaceImg
+  > .imgSolo {
+  height: 0;
+  width: 42vw;
+  border-radius: 20px;
+}
+
+.closedDescriptionBackground
+  > .imgContainer
+  > div
+  > .presentationOfThePlaceImg
+  > .imgDouble {
+  height: 0;
+  width: 28vw;
+  border-radius: 20px;
+}
+
+.closedDescriptionBackground
+  > .imgContainer
+  > div
+  > .presentationOfThePlaceImg
+  > .imgTriple {
+  height: 0;
+  width: 14vw;
+  border-radius: 20px;
+}
+
+.presentationOfThePlaceImgClicked > .paysage {
+  width: 70vw;
+  border-radius: 20px;
+}
+
+.presentationOfThePlaceImgClicked > .portrait {
+  width: 70vw;
+  border-radius: 20px;
+}
+
+.presentationOfThePlaceImgClosed > img {
+  height: 0;
+  width: 0;
+}
+
+/*****Test*****/
+/* @media (max-width: 750px) {
+  #background-video {
+     display: none;
+  } 
+  body {
+     background: url("00.jpg") no-repeat;
+     background-size: cover;
+  }
+} */

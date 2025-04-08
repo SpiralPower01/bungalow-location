@@ -1,0 +1,49 @@
+/* header{
+    height: 69px;
+} */
+
+.reservationToolWithClosedCalendar {
+  height: 69px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.barreDeReservation {
+  display: flex;
+  width: 80vw;
+  justify-content: space-around;
+}
+
+.btnReservationBackground {
+  /* background-size:cover;
+    background-position-y: -15px; */
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.btnReservation {
+  /* background-size:cover;
+    background-position-y: -15px;
+    background-clip: text;
+    color: transparent;
+    filter:invert(100%); */
+  font-weight: bold;
+  background: linear-gradient(to right, aqua, yellow);
+  background-clip: text;
+  color: transparent;
+}
+
+.btnReservation:hover {
+  background: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 255));
+  background-clip: text;
+  cursor: pointer;
+}
+
+#occupants {
+  border: none;
+  /* background: none; */
+  /* color:transparent; */
+}
